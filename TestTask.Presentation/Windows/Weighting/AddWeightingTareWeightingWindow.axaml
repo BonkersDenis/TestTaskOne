@@ -10,9 +10,10 @@
 
     <StackPanel Margin="20" Spacing="15" >
         <StackPanel Orientation="Horizontal" Spacing="10">
-            <TextBlock Text="Выбрать номер машины" />
+            <TextBlock Text="Номер машины" />
             <ComboBox ItemsSource="{Binding CarSelectList}"
                     SelectedItem="{Binding SelectedCar}"
+                    IsEnabled="False"
                     DisplayMemberBinding="{Binding Number}" />
             </StackPanel>
         <StackPanel Orientation="Horizontal" Spacing="10">
